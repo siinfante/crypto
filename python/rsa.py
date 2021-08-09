@@ -10,8 +10,8 @@ q = 999900049387"""
 
 from Crypto.PublicKey import RSA
 RSAkey = RSA.generate(1024)
-p = getattr(RSAkey.key, 'p')
-q = getattr(RSAkey.key, 'q')
+p = RSAkey.key.p
+q = RSAkey.key.q
 
 n = p*q
 totient = (p-1)*(q-1)
