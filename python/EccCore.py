@@ -17,7 +17,7 @@ def findModularInverse(a, mod):
 	t2 = x2 - q*y2
 	t3 = x3 - (q*y3)
 	
-	if dump == True:
+	if dump is True:
 		print("q\tx1\tx2\tx3\ty1\ty2\ty3\tt1\tt2\tt3")
 		print("----------------------------------------------------------------------------")
 		print(q,"\t",x1,"\t",x2,"\t",x3,"\t",y1,"\t",y2,"\t",y3,"\t",t1,"\t",t2,"\t",t3)
@@ -32,7 +32,7 @@ def findModularInverse(a, mod):
 		t2 = x2 - q*y2
 		t3 = x3 - (q*y3)
 		
-		if dump == True:
+		if dump is True:
 			print(q,"\t",x1,"\t",x2,"\t",x3,"\t",y1,"\t",y2,"\t",y3,"\t",t1,"\t",t2,"\t",t3)
 			print("----------------------------------------------------------------------------")
 			print("")

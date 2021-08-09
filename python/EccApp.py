@@ -12,7 +12,7 @@ enableBitcoinParams = True
 #------------------------------------
 #curve configuration
 
-if enableBitcoinParams == True:
+if enableBitcoinParams is True:
 	mod = pow(2, 256) - pow(2, 32) - pow(2, 9) - pow(2, 8) - pow(2, 7) - pow(2, 6) - pow(2, 4) - pow(2, 0)
 	order = 115792089237316195423570985008687907852837564279074904382605163141518161494337
 else:
@@ -25,7 +25,7 @@ a = 0
 b = 7
 
 #base point on the curve
-if enableBitcoinParams == True:
+if enableBitcoinParams is True:
 	x0 = 55066263022277343669578718895168534326250603453777594175500187360389116729240
 	y0 = 32670510020758816978083085130507043184471273380659243275938904335757337482424
 else:
@@ -44,7 +44,7 @@ print()
 
 #------------------------------------
 #brute force
-if applyBruteForce == True:
+if applyBruteForce is True:
 	
 	print("\n-----------------------------------------")
 	print("brute force")
@@ -67,7 +67,7 @@ if applyBruteForce == True:
 #------------------------------------
 #key exchange
 
-if applyKeyExchange == True:
+if applyKeyExchange is True:
 	
 	print("\n------------------------------------------")
 	print("Elliptic Curve Diffie Hellman Key Exchange")
@@ -92,7 +92,7 @@ if applyKeyExchange == True:
 #------------------------------------
 #digital signature
 
-if applyDigitalSignature == True:
+if applyDigitalSignature is True:
 	
 	print("\n------------------------------------------")
 	print("Elliptic Curve Digital Signature Algorithm")
@@ -158,7 +158,7 @@ if applyDigitalSignature == True:
 #------------------------------------
 #symmetric encryption
 
-if applySymmetricEncryption == True:
+if applySymmetricEncryption is True:
 	print("\n------------------------------------------")
 	print("Elliptic Curve ElGamal Cryptosystem")
 	print("------------------------------------------")
@@ -204,7 +204,7 @@ if applySymmetricEncryption == True:
 	
 #------------------------------------
 
-if applyOrderOfGroup == True:
+if applyOrderOfGroup is True:
 	
 	print("\n------------------------------------------")
 	print("Find Order of Elliptic Curve Group")
@@ -253,14 +253,14 @@ if applyOrderOfGroup == True:
 					break
 		
 		print()
-		if terminate == True:
+		if terminate is True:
 			break
 	
 	print("order of group: ", orderOfGroup)
 
 #-----------------------------------
 
-if applyECDLP == True:
+if applyECDLP is True:
 
 	print("\n------------------------------------------")
 	print("Find k such that Q = k x P")
@@ -298,5 +298,5 @@ if applyECDLP == True:
 				terminate = True
 				break
 		
-		if terminate == True:
+		if terminate is True:
 			break
