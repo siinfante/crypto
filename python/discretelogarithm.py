@@ -30,5 +30,5 @@ for i in range(0, m):
 			terminate = True
 			break
 	
-	if terminate == True:
+	if terminate is True:
 		break
