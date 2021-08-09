@@ -144,11 +144,8 @@ public class Bitcoin {
     md.update(checking);
     checking = md.digest();
 
-    BigInteger checkingInt =
-        new BigInteger(
-            1,
-            checking); // use this 1 to tell it is positive
-                       // (https://stackoverflow.com/questions/6357234/sha-hash-function-gives-a-negative-output)
+    BigInteger checkingInt = new BigInteger(1, checking); // use this 1 to tell it is positive
+    // (https://stackoverflow.com/questions/6357234/sha-hash-function-gives-a-negative-output)
 
     System.out.println(
         "second time sha-256 applied to extended ripe160: "
