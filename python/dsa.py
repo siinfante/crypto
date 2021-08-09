@@ -10,7 +10,6 @@ def testPrimeness(number):
 	for i in range(2, number):
 		if number % i == 0:
 			return False
-			break
 	return True
 
 for i in range(10, p):
